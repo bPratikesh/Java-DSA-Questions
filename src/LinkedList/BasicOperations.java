@@ -6,17 +6,43 @@ public class BasicOperations {
         Node<Integer> head = new Node<>(1);
 
         Node<Integer> n1 = new Node<>(2);
-        Node<Integer> n2 = new Node<>(3);
+        Node<Integer> n2 = new Node<>(2);
         Node<Integer> n3 = new Node<>(4);
 
         head.next = n1;
         n1.next = n2;
         n2.next = n3;
 
-        head = insertElement(2, 100, head);
-        deleteElement(1, head);
+//        head = insertElement(2, 100, head);
+//        deleteElement(1, head);
         printLinkedList(head);
 
+        Node<Integer> newHead = removeDuplicateElement(head);
+        System.out.println();
+        printLinkedList(newHead);
+
+    }
+
+    public static Node<Integer> removeDuplicateElement(Node<Integer> head){
+        Node<Integer> original = head;
+        Node<Integer> temp = head;
+        Node<Integer> newHead = null;
+
+        while (original != null){
+            while (original.next != null && original.val == original.next.val){
+                original = original.next;
+            }
+
+            if (newHead == null){
+                newHead = temp = original;
+            }
+            else {
+                temp.next = original;
+                temp = original;
+            }
+            original = original.next;
+        }
+        return newHead;
     }
 
     public static Node<Integer> deleteElement(int position, Node<Integer> head){
