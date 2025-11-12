@@ -88,7 +88,7 @@ public class BasicOperations {
 
 }
 
-class Node<E> {
+/*class Node<E> {
 
     E val;
     Node<E> next;
@@ -97,4 +97,4 @@ class Node<E> {
         this.val = val;
         this.next = null;
     }
-}
+}*/
