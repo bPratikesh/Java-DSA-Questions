@@ -11,10 +11,25 @@ public class ReverseLinkedList {
         n1.next = n2;
         n2.next = n3;
 
-        Node<Integer> newHead = reverse(head);
+//        Node<Integer> newHead = reverse(head);
+        Node<Integer> newHead = reverseLLRecursively(head);
         printLL(newHead);
     }
 
+    //Recursively
+    static Node<Integer> reverseLLRecursively(Node<Integer> head){
+        if (head == null || head.next == null) return head;
+
+        Node subProblem = reverseLLRecursively(head.next);
+
+        head.next.next = head;
+        head.next = null;
+
+        return subProblem;
+    }
+
+
+    //Iteratively
     public static Node<Integer> reverse(Node<Integer> head){
         if (head == null && head.next == null) return head;
 
