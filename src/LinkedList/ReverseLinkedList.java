@@ -18,8 +18,8 @@ public class ReverseLinkedList {
 
     //Recursively
     static Node<Integer> reverseLLRecursively(Node<Integer> head){
-        if (head == null || head.next == null) return head;
 
+        if (head == null || head.next == null) return head;
         Node subProblem = reverseLLRecursively(head.next);
 
         head.next.next = head;
