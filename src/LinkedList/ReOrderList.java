@@ -58,7 +58,6 @@ public class ReOrderList {
         }
         return slowPtr;
     }
-
     static Node<Integer> reverseLL(Node<Integer> head){
         if (head == null || head.next == null) return head;
 
@@ -74,7 +73,6 @@ public class ReOrderList {
         }
         return prev;
     }
-
     static void printLL(Node<Integer> head){
         Node<Integer> temp = head;
         while (temp != null){
