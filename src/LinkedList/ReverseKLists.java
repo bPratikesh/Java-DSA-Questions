@@ -1,8 +1,6 @@
 package LinkedList;
-
 public class ReverseKLists {
     public static void main(String[] args) {
-
         Node<Integer> head = new Node<>(1);
         Node<Integer> n1 = new Node<>(2);
         Node<Integer> n2 = new Node<>(3);
@@ -18,7 +16,6 @@ public class ReverseKLists {
         printLL(head);
         Node<Integer> reverseHead = reverseKLists(head, k);
         printLL(reverseHead);
-
     }
 
     static Node<Integer> reverseKLists(Node<Integer> head, int k){
