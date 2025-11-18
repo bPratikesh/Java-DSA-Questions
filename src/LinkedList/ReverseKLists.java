@@ -24,7 +24,6 @@ public class ReverseKLists {
 
         Node<Integer> prevTail = dummy;
         Node<Integer> currHead = head;
-
         while (currHead != null){
             Node<Integer> currTail = currHead;
             for (int i=0; i<k-1; i++){
