@@ -12,7 +12,6 @@ public class ListCycle {
 
         Node<Integer> newNode = ListCycleInLL(head);
         System.out.println(newNode.val);
-
     }
 
     static Node<Integer> ListCycleInLL(Node<Integer> head){
