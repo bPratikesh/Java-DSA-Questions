@@ -16,7 +16,6 @@ public class ReOrderList {
 
 //        Node<Integer> mid = midNode(head);
 //        printLL(mid);
-
         printLL(head);
         Node<Integer> r = reOrder(head);
         printLL(r);
