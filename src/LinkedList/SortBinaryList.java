@@ -13,7 +13,6 @@ public class SortBinaryList {
         Node<Integer> HeadNode = sortLL(head);
         printLL(HeadNode);
     }
-
     //Approach: data replacement
     static Node<Integer> sortLL(Node<Integer> head){
         int countZero = 0;
