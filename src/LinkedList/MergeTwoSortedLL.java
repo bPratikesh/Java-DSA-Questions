@@ -8,23 +8,20 @@ public class MergeTwoSortedLL {
 
         Node<Integer> head = new Node<>(-1);
         Node<Integer> n1 = new Node<>(2);
-        Node<Integer> n3 = new Node<>(4);
-        Node<Integer> n2 = new Node<>(-7);
+        Node<Integer> n2 = new Node<>(4);
 
         head.next = n1;
         n1.next = n2;
-        n2.next = n3;
 
-        Node<Integer> head2 = new Node<>(-3);
-        Node<Integer> m1 = new Node<>(7);
-        Node<Integer> m2 = new Node<>(6);
-        Node<Integer> m3 = new Node<>(5);
+        Node<Integer> head2 = new Node<>(-1);
+        Node<Integer> m1 = new Node<>(3);
+        Node<Integer> m2 = new Node<>(4);
 
         head2.next = m1;
         m1.next = m2;
-        m2.next = m3;
 
-        printArray(mergeTwoLL(head, head2));
+//        printArray(mergeTwoLL(head, head2));
+        printArray(MergeTwoSortedLLOptimalSol(head, head2));
     }
 
 //    Brute force
@@ -56,6 +53,31 @@ public class MergeTwoSortedLL {
         for (int i=0; i<arr.size(); i++){
             temp.next = new Node<>(arr.get(i));
             temp = temp.next;
+        }
+        return dummyNode.next;
+    }
+
+
+    //optimal approach
+   static Node<Integer> MergeTwoSortedLLOptimalSol(Node<Integer>l1, Node<Integer>l2){
+        Node<Integer> dummyNode = new Node<>(-1);
+        Node<Integer> temp = dummyNode;
+
+        while (l1 != null && l2 != null){
+            if (l1.val <= l2.val){
+                temp.next = l1;
+                l1 = l1.next;
+            }else{
+                temp.next = l2;
+                l2 = l2.next;
+            }
+            temp = temp.next;
+        }
+
+        if (l1 != null){
+            temp.next = l1;
+        }else {
+            temp.next = l2;
         }
         return dummyNode.next;
     }
