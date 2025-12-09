@@ -16,14 +16,10 @@ public class IntersectionOfLinkedList {
         Node<Integer> head2 = new Node<>(2);
         Node<Integer> m1 = new Node<>(4);
         Node<Integer> m2 = new Node<>(5);
-        Node<Integer> m3 = new Node<>(4);
-        Node<Integer> m4 = new Node<>(6);
-        Node<Integer> m5 = new Node<>(2);
+
         head2.next = m1;
         m1.next = m2;
-        m2.next = m3;
-        m3.next = m4;
-        m4.next = m5;
+        m2.next = n2;
         printLL(intersection(head, head2));
     }
 
@@ -63,7 +59,7 @@ public class IntersectionOfLinkedList {
 
     static void printLL(Node<Integer> head){
         while(head != null){
-            System.out.println(head.val+"->");
+            System.out.print(head.val+"->");
             head = head.next;
         }
         System.out.println();
