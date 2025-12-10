@@ -56,7 +56,6 @@ public class IntersectionOfLinkedList {
         }
         return t1;
     }
-
     static void printLL(Node<Integer> head){
         while(head != null){
             System.out.print(head.val+"->");
