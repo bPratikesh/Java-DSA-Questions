@@ -17,7 +17,6 @@ public class RemoveDuplicate_II {
 
         printLL(removeDuplicateII(head));
     }
-
     static Node<Integer> removeDuplicateII(Node<Integer> head){
         Node<Integer> dummy = new Node<>(0);
         dummy.next = head;
