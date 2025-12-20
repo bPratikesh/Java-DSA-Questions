@@ -24,7 +24,6 @@ public class IntersectionOfLinkedList {
     }
 
     static Node<Integer>intersection(Node<Integer> head1, Node<Integer> head2){
-
         Node<Integer> t1 = head1; int n1=0;
         Node<Integer> t2 = head2; int n2=0;
 
