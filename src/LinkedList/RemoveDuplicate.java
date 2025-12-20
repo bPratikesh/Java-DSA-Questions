@@ -15,7 +15,6 @@ public class RemoveDuplicate {
 
         Node<Integer> headNew = removeDuplicateElement(head);
         printLL(headNew);
-
     }
     static Node<Integer> removeDuplicateElement(Node<Integer> head){
 
