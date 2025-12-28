@@ -10,7 +10,6 @@ public class WaveArray {
             System.out.print(e+" ");
         }
     }
-
     //lexographically sorted
     static void waveArray(int a[]){
         Arrays.sort(a);
