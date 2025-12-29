@@ -42,7 +42,6 @@ public class IntersectionOfLinkedList {
             return collisionPoint(head2, head1, n1-n2);
         }
     }
-
     static Node<Integer> collisionPoint(Node<Integer> t1, Node<Integer> t2, int d){
 
         while (d != 0){
