@@ -30,7 +30,6 @@ public class RemoveDuplicate {
         }
         return  head;
     }
-
     static void printLL(Node<Integer> head){
         while (head != null){
             System.out.print(head.val+"->");
