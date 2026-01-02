@@ -16,8 +16,6 @@ public class PartitionList {
 
         Node<Integer> headPartition = partitionList(head, k);
         printLl(headPartition);
-
-
     }
 
     static Node<Integer> partitionList(Node<Integer> head, int k){
