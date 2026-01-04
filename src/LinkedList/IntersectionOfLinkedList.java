@@ -35,7 +35,6 @@ public class IntersectionOfLinkedList {
             n2++;
             t2 = t2.next;
         }
-
         if (n1 < n2){
             return collisionPoint(head1, head2, n2-n1);
         }else {
