@@ -20,7 +20,6 @@ public class WaveArray {
             a[i-1] = temp;
         }
     }
-
     static void waveArrayNotLexographically(int a[]){
         for (int i=1; i<a.length; i+=2){
             if (a[i] > a[i-1]){
