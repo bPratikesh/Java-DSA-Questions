@@ -12,7 +12,6 @@ public class KnightsTour {
             System.out.println();
         }
     }
-
     static int[][] knightsTour(int n){
         int chessBoard[][] = new int[n][n];
         for (int i=0; i<n; i++){
