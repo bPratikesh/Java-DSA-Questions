@@ -11,7 +11,6 @@ public class GenerateParenthesis {
             System.out.println(cur);
             return;
         }
-
         if(open<n){
             cur = cur+"(";
             generateParenthesis(cur, n, index+1, open+1, close);
