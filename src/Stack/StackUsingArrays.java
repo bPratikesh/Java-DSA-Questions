@@ -1,8 +1,8 @@
 package Stack;
 
-public class StackImplementationUsingArrays {
+public class StackUsingArrays {
     public static void main(String[] args) {
-        StackImplementationUsingArrays stack = new StackImplementationUsingArrays(4);
+        StackUsingArrays stack = new StackUsingArrays(4);
 
         stack.push(1);
         stack.push(2);
@@ -23,17 +23,17 @@ public class StackImplementationUsingArrays {
         }
     }
 
-    int size;
-    int a[];
-    int top;
+    private int size;
+    private int a[];
+    private int top;
 
-    public StackImplementationUsingArrays(int size){
+    public StackUsingArrays(int size){
         this.size = size;
         a = new int[size];
         top = -1;
     }
 
-    boolean push(int data){
+    public boolean push(int data){
         if(isStackFull()){
             System.out.println("Stack Overflow");
             return false;
@@ -44,7 +44,7 @@ public class StackImplementationUsingArrays {
         }
     }
 
-    int pop(){
+    public int pop(){
         if(isStackEmpty()){
             System.out.println("Stack is empty");
             return -1;
@@ -55,7 +55,7 @@ public class StackImplementationUsingArrays {
         }
     }
 
-    int peek(){
+    public int peek(){
         if (isStackEmpty()){
             System.out.println("Stack is empty");
             return -1;
@@ -65,15 +65,15 @@ public class StackImplementationUsingArrays {
         }
     }
 
-    boolean isStackEmpty(){
+    public boolean isStackEmpty(){
         return top == -1;
     }
 
-    boolean isStackFull(){
+    public boolean isStackFull(){
         return top == size-1;
     }
 
-    void printStack(){
+    public void printStack(){
         for (int i=0; i<=top; i++){
             System.out.print(a[i]+" ");
         }
