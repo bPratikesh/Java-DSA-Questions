@@ -9,7 +9,6 @@ public class ValidParenthesis {
         System.out.println(validParenthesis(exp));
 
     }
-
     static boolean validParenthesis(String s){
         ArrayDeque<Character> stack = new ArrayDeque<>();
 
