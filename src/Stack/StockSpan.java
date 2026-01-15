@@ -1,5 +1,4 @@
 package Stack;
-
 import java.util.ArrayDeque;
 public class StockSpan {
     public static void main(String[] args) {
