@@ -9,7 +9,6 @@ public class StockSpan {
             System.out.print(e+" ");
         }
     }
-
     static int[] stockSpan(int a[]){
         int n = a.length;
         int s[] = new int[n];
