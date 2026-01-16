@@ -8,7 +8,6 @@ public class StackUsingArrays {
         stack.push(2);
         stack.push(3);
         stack.push(4);
-
 //        stack.printStack();
 //        stack.push(1);
 //        stack.printStack();
