@@ -14,8 +14,6 @@ public class StackUsingArrays {
 //        stack.pop();
 //        stack.printStack();
 //        System.out.println(stack.peek());
-
-
         //Iterating stack
         while (!stack.isStackEmpty()){
             System.out.print(stack.pop()+" ");
