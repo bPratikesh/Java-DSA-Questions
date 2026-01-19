@@ -15,7 +15,6 @@ public class StackUsingLinkedList {
             System.out.print(stack.pop()+" ");
         }
     }
-
     private class Node{
         int data;
         Node next;
