@@ -8,7 +8,6 @@ public class EvaluatePostfixExp {
         System.out.println(evaluatePostfix(expression));
 
     }
-
     static int evaluatePostfix(String s){
         String tokens[] = s.split(" ");
         ArrayDeque<Integer> stack = new ArrayDeque<>();
