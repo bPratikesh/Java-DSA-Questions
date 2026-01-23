@@ -15,7 +15,6 @@ public class StockSpan {
         s[0] = 1;
         ArrayDeque<Integer> stack = new ArrayDeque<>();
         stack.push(0);
-
         for (int i=1; i<n; i++){
             while (!stack.isEmpty()){
                 int top = stack.peek();
