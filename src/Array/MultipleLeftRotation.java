@@ -10,7 +10,6 @@ public class MultipleLeftRotation {
             System.out.println();
         }
     }
-
     static int [][] multipleRotations(int numbers[], int queries[]){
         int m= queries.length;
         int n= numbers.length;
