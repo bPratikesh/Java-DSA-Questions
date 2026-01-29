@@ -6,7 +6,6 @@ public class CountOccurrencesOfaString {
         String word = "ab";
         System.out.println(count(textInput, word, 0));
     }
-
     static int count(String textInput, String word, int index ){
         if (index > textInput.length()-word.length()) return 0;
 
