@@ -9,7 +9,6 @@ public class RemoveNthNode {
         Node<Integer> n4 = new Node<>(5);
         head.next = n1; n1.next = n2; n2.next = n3; n3.next = n4;
         printLL(removeNnode(head,1));
-
     }
     static Node<Integer> removeNnode(Node<Integer> head, int n){
         int count = 0;
