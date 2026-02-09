@@ -9,7 +9,6 @@ public class StackUsingLinkedList {
         stack.push(2);
         stack.push(3);
         stack.push(4);
-
         //Iterating stack
         while (!stack.isStackEmpty()){
             System.out.print(stack.pop()+" ");
@@ -53,6 +52,4 @@ public class StackUsingLinkedList {
             return head.data;
         }
     }
-
-
 }
