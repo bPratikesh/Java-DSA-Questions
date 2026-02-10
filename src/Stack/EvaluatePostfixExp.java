@@ -42,7 +42,6 @@ public class EvaluatePostfixExp {
         }
         return stack.pop();
     }
-
     static boolean isTokenOperator(String s){
         return s.equals("+") || s.equals("-") ||s.equals("*") ||s.equals("/") ||s.equals("^");
     }
