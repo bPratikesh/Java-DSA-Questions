@@ -11,6 +11,10 @@ public class KnightsTour {
             System.out.println();
         }
     }
+    static boolean isValid(int n, int chessBoard[][], int row, int col){
+        if(row>=0 && col>=0 && row<n && col<n && chessBoard[row][col]==-1) return true;
+        return false;
+    }
     static int[][] knightsTour(int n){
         int chessBoard[][] = new int[n][n];
         for (int i=0; i<n; i++){
@@ -48,8 +52,5 @@ public class KnightsTour {
         return false;
     }
 
-    static boolean isValid(int n, int chessBoard[][], int row, int col){
-        if(row>=0 && col>=0 && row<n && col<n && chessBoard[row][col]==-1) return true;
-        return false;
-    }
+
 }
