@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 
 public class EvaluatePostfixExp {
     public static void main(String[] args) {
-        String expression = "3 4 * 2 5 * +";
+        String expression = "3 4 * 9 5 * +";
         System.out.println(evaluatePostfix(expression));
     }
     static int evaluatePostfix(String s){
