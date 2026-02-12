@@ -9,7 +9,6 @@ public class SubsetsOfString {
     static void isPalindrome(String s){
          printSubsetsHelper(s, 0, "");
     }
-
      static void printSubsetsHelper(String s, int index, String current){
         if (index == s.length()){
             System.out.println(current);
