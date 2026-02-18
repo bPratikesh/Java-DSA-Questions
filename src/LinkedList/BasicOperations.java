@@ -12,7 +12,6 @@ public class BasicOperations {
         head.next = n1;
         n1.next = n2;
         n2.next = n3;
-
 //        head = insertElement(2, 100, head);
 //        deleteElement(1, head);
         printLinkedList(head);
