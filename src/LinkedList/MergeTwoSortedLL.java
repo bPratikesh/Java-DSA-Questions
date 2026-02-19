@@ -9,14 +9,12 @@ public class MergeTwoSortedLL {
         Node<Integer> head = new Node<>(-1);
         Node<Integer> n1 = new Node<>(2);
         Node<Integer> n2 = new Node<>(4);
-
         head.next = n1;
         n1.next = n2;
 
         Node<Integer> head2 = new Node<>(-1);
         Node<Integer> m1 = new Node<>(3);
         Node<Integer> m2 = new Node<>(4);
-
         head2.next = m1;
         m1.next = m2;
 
