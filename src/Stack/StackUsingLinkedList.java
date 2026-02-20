@@ -1,7 +1,6 @@
 package Stack;
 
 public class StackUsingLinkedList {
-
     public static void main(String[] args) {
         StackUsingLinkedList stack = new StackUsingLinkedList();
 
